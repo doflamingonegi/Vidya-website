@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/payment.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <header>
+        <h1>Payment Page</h1>
+    </header>
+<section id="course">
+    <h1>Our Courses</h1>
+    
+    <div class="row">
+        <div class="course-col">
+            <h3>Weekly</h3>
+            <p>1 week online class <br>2 doubts a day<br>any 2 chapter notes</p>
+        </div>
+        <div class="course-col">
+            <h3>Monthly</h3>
+            <p>1 month online class <br>10 doubts a day <br>any 2 chapter notes</p>
+        </div>
+        <div class="course-col">
+            <h3>Yearly</h3>
+            <p>1 year online class <br>unlimited doubts <br>any 2 chapter notes</p>
+        </div>
+    </div>
+</section>
+    <main>
+        <section class="payment-form">
+            <h2>Choose Your Course</h2>
+            <form action="/payment/process" method="post">
+                <label for="course">Select a Course:</label>
+                <select id="course" name="course">
+                    <option value="course1">Weekly</option>
+                    <option value="course2">Monthly</option>
+                    <option value="course3">Yearly</option>
+                </select>
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="creditCard">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+                <button type="submit">Proceed to Payment</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

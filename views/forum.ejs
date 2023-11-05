@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/forum.css">
+    <title>Forum</title>
+</head>
+
+<body>
+    <header>
+        <h1>Forum</h1>
+    </header>
+    <main>
+        <section class="topic-list">
+            <h2>Latest Topics</h2>
+            <ul>
+                <% topics.forEach(function(topic) { %>
+                    <li>
+                        <a href="/forum/<%= topic.id %>"><%= topic.title %></a>
+                    </li>
+                <% }); %>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
