@@ -23,13 +23,13 @@ Made in EJS and CSS using Express.js as backend library.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/doflamingonegi/Vidya-website.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Vidya-website
 ```
 
 Install dependencies
